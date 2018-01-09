@@ -1,0 +1,28 @@
+<!--
+  Generated template for the SubmitPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Submit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-row>
+    <ion-col>
+      <ion-label color="primary">Catch Phrase</ion-label>
+      <ion-textarea autosize class="sub_textarea" name="catch_phrase" maxlength="250" [(ngModel)]="catch_phrase"></ion-textarea>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button (click)="submit()" ion-button block round margin-top>Submit</button>
+    </ion-col>
+  </ion-row>
+</ion-content>
